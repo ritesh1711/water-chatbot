@@ -1,7 +1,7 @@
-import { chatController } from './controllers/chat.controller.js';
+import { serve } from '@hono/node-server';
 import { Hono } from 'hono';
 import { cors } from 'hono/cors';
-
+import { chatController } from './controllers/chat.controller.js';
 
 const app = new Hono();
 
